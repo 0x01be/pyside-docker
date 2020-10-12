@@ -37,7 +37,10 @@ RUN apk add --no-cache --virtual pyside-edge-build-dependencies \
     qt5-qtwebengine-dev \
     qt5-qtwebview-dev \
     qt5-qtwebsockets-dev \
+    qt5-qtlottie-dev \
+    qt5-qtquicktimeline \
     samurai \
+    py3-qt5 \
     py3-shiboken2
 
 ENV PYSIDE_REVISION 5.15.1
