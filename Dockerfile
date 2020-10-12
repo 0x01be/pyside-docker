@@ -38,7 +38,6 @@ RUN apk add --no-cache --virtual pyside-edge-build-dependencies \
     qt5-qtcharts-dev \
     qt5-qtsvg-dev \
     qt5-qtwebengine-dev \
-    qt5-qtwebview-dev \
     qt5-qtwebsockets-dev \
     qt5-qtwebchannel-dev \
     qt5-qtlottie-dev \
