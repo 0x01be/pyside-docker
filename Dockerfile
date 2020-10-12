@@ -44,5 +44,5 @@ ENV PYSIDE_REVISION 5.15.1
 RUN git clone --depth 1 --branch ${PYSIDE_REVISION} https://code.qt.io/pyside/pyside-setup /pyside
 
 WORKDIR /pyside
-#RUN python3 setup.py install --qmake=/usr/bin/qmake-qt5 --prefix=/opt/pyside
+RUN python3 setup.py install --qmake=/usr/bin/qmake-qt5 --prefix=/opt/pyside
 
