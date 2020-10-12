@@ -45,6 +45,7 @@ RUN apk add --no-cache --virtual pyside-edge-build-dependencies \
 
 ENV PYSIDE_REVISION 5.15.1
 RUN git clone --depth 1 --branch ${PYSIDE_REVISION} https://code.qt.io/pyside/pyside-setup /pyside
+RUN git clone --depth 1 --branch v${PYSIDE_REVISION}  https://code.qt.io/pyside/pyside-tools /pyside/sources/pyside2-tools
 
 WORKDIR /pyside/build
 RUN cmake \
