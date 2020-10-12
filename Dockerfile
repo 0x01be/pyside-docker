@@ -17,6 +17,7 @@ RUN apk add --no-cache --virtual pyside-edge-build-dependencies \
     --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
     qt5-qtbase-dev \
     qt5-qttools-dev \
+    qt5-qttools-static \
     qt5-qtscript-dev \
     qt5-qtxmlpatterns-dev \
     qt5-qtmultimedia-dev \
