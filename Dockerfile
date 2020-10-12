@@ -46,6 +46,10 @@ RUN apk add --no-cache --virtual pyside-edge-build-dependencies \
 ENV PYSIDE_REVISION 5.15.1
 RUN git clone --depth 1 --branch ${PYSIDE_REVISION} https://code.qt.io/pyside/pyside-setup /pyside
 
-WORKDIR /pyside
-RUN python3 setup.py install --qmake=/usr/bin/qmake-qt5 --prefix=/opt/pyside
+WORKDIR /pyside/build
+RUN cmake \
+   -DCMAKE_INSTALL_PREFIX=/opt/pyside \
+   ..
+RUN make
+RUN make install
 
