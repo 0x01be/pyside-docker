@@ -54,9 +54,9 @@ RUN git clone --depth 1 --branch ${PYSIDE_REVISION} https://code.qt.io/pyside/py
 RUN git clone --depth 1 --branch v${PYSIDE_REVISION}  https://code.qt.io/pyside/pyside-tools /pyside/sources/pyside2-tools
 
 WORKDIR /pyside/build
-#RUN cmake \
-#   -DCMAKE_INSTALL_PREFIX=/opt/pyside \
-#   ..
-#RUN make
-#RUN make install
+RUN cmake \
+   -DCMAKE_INSTALL_PREFIX=/opt/pyside \
+   ..
+RUN make
+RUN make install
 
